@@ -2,96 +2,116 @@
 @import "mixin";
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background-color: $backgroundColor;
-    font-family: $font;
-    color : $Color;
+body {
+  background-color: $backgroundColor;
+  font-family: $font;
+  color: $Color;
 }
 
 //styling paragraph
-p{
-    font-size: 0.9rem;
-    line-height: 1.8;
+p {
+  font-size: 0.9rem;
+  line-height: 1.8;
 }
 
 //styling paragraph inside quote-1
 .quote-1 {
-    margin : 1rem;
+  margin: 1rem 0;
 
-    p{
-        font-weight: 37.5rem;
-        font-size: 1.25rem;
-        line-height: 1.2;
-    }
+  p {
+    font-weight: 37.5rem;
+    font-size: 1.25rem;
+    line-height: 1.2;
+  }
 }
 
 //styling the wrapper class
-.wrapper{
-    @include flexprob;
-    height: 100vh;
+.wrapper {
+  @include flexprob;
+  height: 100vh;
 
-    //styling the main grid element
-    .main-grid{
-        @include gridcontrol;
+  //styling the main grid element
+  .main-grid {
+    @include gridcontrol;
+  }
+
+  .item-1 {
+    grid-area: grid-area-1;
+  }
+
+  .item-2 {
+    grid-area: grid-area-2;
+  }
+
+  .item-3 {
+    grid-area: grid-area-3;
+  }
+
+  .item-4 {
+    grid-area: grid-area-4;
+  }
+
+  .item-5 {
+    grid-area: grid-area-5;
+  }
+
+  .testimonial-grid-card {
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+
+  .card-head {
+    @include flexprob1;
+  }
+
+  .profile {
+    img {
+      border: 1px solid $bgLightBackgroundColor;
+      border-radius: 50%;
     }
 
-    .item-1{
-        grid-area: grid-area-1;
+    .person-name {
+      margin-left: 1rem;
     }
 
-    .item-2{
-        grid-area: grid-area-2;
+    .person-role {
+      p {
+        opacity: 0.5;
+      }
     }
+  }
 
-    .item-3{
-        grid-area: grid-area-3;
+  .quote-2 {
+    p {
+      opacity: 0.7;
     }
+  }
 
-    .item-4{
-        grid-area: grid-area-4;
-    }
+  .bg-light {
+    background: $bgLightBackgroundColor;
+  }
 
-    .item-5{
-        grid-area: grid-area-5;
-    }
+  .bg-dark {
+    background: $bgDarkBackground;
+    color: $bgLightBackgroundColor;
+  }
 
-    .testimonial-grid-card{
-        border-radius: 1rem;
-        padding: 1.5rem;
-        margin: 1rem;
-    }
+  .bg-gray {
+    background: $bgGrayBackground;
+    color: $bgLightBackgroundColor;
+  }
 
-    .card-head{
-        @include flexprob1;
-    }
-
-    .profile{
-        img {
-            border: 1px solid hsl(0, 0%, 100%);
-            border-radius: 50%;
-        }
-
-        .person-name{
-            margin-left: 1rem;
-        }
-
-        .person-role{
-            p{
-                opacity: 0.5;
-            }
-        }
-    }
-
-    .quote-2{
-        p{
-            opacity: 0.7;
-        }
-    }
-
-    .bg-light
+  .bg-purple {
+    background: url("https://raw.githubusercontent.com/DecodewithHappy/Testimonials-grid-section-main/873e415e5165b0a5f1b3e9b52b144b93a3f83546/images/bg-pattern-quotation.svg")
+      repeat hsl(263, 55%, 52%);
+    background-position: calc(100% - 1rem) 1rem;
+    background-repeat: no-repeat;
+    color: hsl(0, 0%, 100%);
+  }
 }
