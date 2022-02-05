@@ -61,7 +61,7 @@ p {
   }
 
   .testimonial-grid-card {
-      box-shadow: 0.5rem 0.75rem 0.75rem hsl(0, 0%, 70%);
+    box-shadow: 0.5rem 0.75rem 0.75rem hsl(0, 0%, 70%);
     border-radius: 1rem;
     padding: 1.5rem;
     margin: 1rem;
@@ -69,14 +69,15 @@ p {
 
   .card-head {
     @include flexprob1;
-  }
 
-  .profile {
+  .profile-img {
     img {
       border: 1px solid $bgLightBackgroundColor;
       border-radius: 50%;
     }
+  }
 
+  .person-detail {
     .person-name {
       margin-left: 1rem;
     }
@@ -87,6 +88,7 @@ p {
       }
     }
   }
+}
 
   .quote-2 {
     p {

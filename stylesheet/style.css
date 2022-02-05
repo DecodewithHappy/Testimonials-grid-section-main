@@ -99,16 +99,16 @@ p {
       flex-wrap: nowrap;
 }
 
-.wrapper .profile img {
+.wrapper .card-head .profile-img img {
   border: 1px solid white;
   border-radius: 50%;
 }
 
-.wrapper .profile .person-name {
+.wrapper .card-head .person-detail .person-name {
   margin-left: 1rem;
 }
 
-.wrapper .profile .person-role p {
+.wrapper .card-head .person-detail .person-role p {
   opacity: 0.5;
 }
 
