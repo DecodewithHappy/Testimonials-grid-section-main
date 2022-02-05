@@ -36,14 +36,14 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
+  height: 880px;
 }
 
 .wrapper .main-grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 18.7rem 18.7rem 18.7rem 18.7rem;
-      grid-template-columns: 18.7rem 18.7rem 18.7rem 18.7rem;
+  -ms-grid-columns: 300px 300px 300px 300px;
+      grid-template-columns: 300px 300px 300px 300px;
       grid-template-areas: "grid-area-1 grid-area-1 grid-area-2 grid-area-5" "grid-area-3 grid-area-4 grid-area-4 grid-area-5";
 }
 
@@ -81,6 +81,8 @@ p {
 }
 
 .wrapper .testimonial-grid-card {
+  -webkit-box-shadow: 0.5rem 0.75rem 0.75rem #b3b3b3;
+          box-shadow: 0.5rem 0.75rem 0.75rem #b3b3b3;
   border-radius: 1rem;
   padding: 1.5rem;
   margin: 1rem;

@@ -33,7 +33,7 @@ p {
 //styling the wrapper class
 .wrapper {
   @include flexprob;
-  height: 100vh;
+  height: 880px;
 
   //styling the main grid element
   .main-grid {
@@ -61,6 +61,7 @@ p {
   }
 
   .testimonial-grid-card {
+      box-shadow: 0.5rem 0.75rem 0.75rem hsl(0, 0%, 70%);
     border-radius: 1rem;
     padding: 1.5rem;
     margin: 1rem;
@@ -108,10 +109,6 @@ p {
   }
 
   .bg-purple {
-    background: url("https://raw.githubusercontent.com/DecodewithHappy/Testimonials-grid-section-main/873e415e5165b0a5f1b3e9b52b144b93a3f83546/images/bg-pattern-quotation.svg")
-      repeat hsl(263, 55%, 52%);
-    background-position: calc(100% - 1rem) 1rem;
-    background-repeat: no-repeat;
-    color: hsl(0, 0%, 100%);
+    @include purple-card;
   }
 }
