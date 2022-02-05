@@ -15,7 +15,7 @@ body {
 
 //styling paragraph
 p {
-  font-size: 0.9rem;
+  font-size: 13px;
   line-height: 1.8;
 }
 
@@ -24,7 +24,7 @@ p {
   margin: 1rem 0;
 
   p {
-    font-weight: 37.5rem;
+    font-weight: 600px;
     font-size: 1.25rem;
     line-height: 1.2;
   }
@@ -93,6 +93,8 @@ p {
   .quote-2 {
     p {
       opacity: 0.7;
+      font-weight: 500px;
+      //font-size: 1rem;
     }
   }
 
