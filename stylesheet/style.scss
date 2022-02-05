@@ -1,4 +1,5 @@
 @import "variable";
+@import "mixin";
 
 * {
     box-sizing: border-box;
@@ -12,7 +13,85 @@ body{
     color : $Color;
 }
 
+//styling paragraph
 p{
     font-size: 0.9rem;
     line-height: 1.8;
+}
+
+//styling paragraph inside quote-1
+.quote-1 {
+    margin : 1rem;
+
+    p{
+        font-weight: 37.5rem;
+        font-size: 1.25rem;
+        line-height: 1.2;
+    }
+}
+
+//styling the wrapper class
+.wrapper{
+    @include flexprob;
+    height: 100vh;
+
+    //styling the main grid element
+    .main-grid{
+        @include gridcontrol;
+    }
+
+    .item-1{
+        grid-area: grid-area-1;
+    }
+
+    .item-2{
+        grid-area: grid-area-2;
+    }
+
+    .item-3{
+        grid-area: grid-area-3;
+    }
+
+    .item-4{
+        grid-area: grid-area-4;
+    }
+
+    .item-5{
+        grid-area: grid-area-5;
+    }
+
+    .testimonial-grid-card{
+        border-radius: 1rem;
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+
+    .card-head{
+        @include flexprob1;
+    }
+
+    .profile{
+        img {
+            border: 1px solid hsl(0, 0%, 100%);
+            border-radius: 50%;
+        }
+
+        .person-name{
+            margin-left: 1rem;
+        }
+
+        .person-role{
+            p{
+                opacity: 0.5;
+            }
+        }
+    }
+
+    .quote-2{
+        p{
+            opacity: 0.7;
+        }
+    }
+
+    .bg-light
 }

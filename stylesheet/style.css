@@ -15,4 +15,100 @@ p {
   font-size: 0.9rem;
   line-height: 1.8;
 }
+
+.quote-1 {
+  margin: 1rem;
+}
+
+.quote-1 p {
+  font-weight: 37.5rem;
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.wrapper .main-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 18.7rem 18.7rem 18.7rem 18.7rem;
+      grid-template-columns: 18.7rem 18.7rem 18.7rem 18.7rem;
+      grid-template-areas: "grid-area-1 grid-area-1 grid-area-2 grid-area-5" "grid-area-3 grid-area-4 grid-area-4 grid-area-5";
+}
+
+.wrapper .item-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: grid-area-1;
+}
+
+.wrapper .item-2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: grid-area-2;
+}
+
+.wrapper .item-3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: grid-area-3;
+}
+
+.wrapper .item-4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: grid-area-4;
+}
+
+.wrapper .item-5 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: grid-area-5;
+}
+
+.wrapper .testimonial-grid-card {
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin: 1rem;
+}
+
+.wrapper .card-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .profile img {
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.wrapper .profile .person-name {
+  margin-left: 1rem;
+}
+
+.wrapper .profile .person-role p {
+  opacity: 0.5;
+}
+
+.wrapper .quote-2 p {
+  opacity: 0.7;
+}
 /*# sourceMappingURL=style.css.map */
