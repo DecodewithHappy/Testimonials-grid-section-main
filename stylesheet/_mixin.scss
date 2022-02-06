@@ -4,21 +4,6 @@
   align-items: center;
 }
 
-@mixin gridcontrol {
-    display: grid;
-    grid-template-columns: 300px 300px 300px 300px;
-    grid-template-areas:
-      "grid-area-1 grid-area-1 grid-area-2 grid-area-5"
-      "grid-area-3 grid-area-4 grid-area-4 grid-area-5";
-    //grid-gap : 1rem;
-  }
-
-@mixin flexprob1 {
-  display: flex;
-  align-items: center;
-  //flex-direction: column;
-  flex-wrap: nowrap;
-}
 
 @mixin purple-card {
   background: url("https://raw.githubusercontent.com/DecodewithHappy/Testimonials-grid-section-main/873e415e5165b0a5f1b3e9b52b144b93a3f83546/images/bg-pattern-quotation.svg")
@@ -27,3 +12,28 @@
   background-repeat: no-repeat;
   color: $bgLightBackgroundColor;
 }
+
+@mixin commonstyle($par) {
+  .card-body {
+    .quote-1 {
+      margin: 1rem 0;
+      .p {
+        color: $par;
+        font-weight: 600px;
+        font-size: 18px;
+        line-height: 1.2;
+        //font-weight:bold;
+      }
+    }
+    .quote-2 {
+      .p {
+        color: $par;
+        opacity: 0.7;
+        font-weight: 500px;
+        font-size: 13px;
+        line-height: 1.8;
+      }
+    }
+  }
+}
+

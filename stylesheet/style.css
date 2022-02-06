@@ -11,21 +11,6 @@ body {
   color: #19212e;
 }
 
-p {
-  font-size: 13px;
-  line-height: 1.8;
-}
-
-.quote-1 {
-  margin: 1rem 0;
-}
-
-.quote-1 p {
-  font-weight: 600px;
-  font-size: 1.25rem;
-  line-height: 1.2;
-}
-
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,7 +29,8 @@ p {
   display: grid;
   -ms-grid-columns: 300px 300px 300px 300px;
       grid-template-columns: 300px 300px 300px 300px;
-      grid-template-areas: "grid-area-1 grid-area-1 grid-area-2 grid-area-5" "grid-area-3 grid-area-4 grid-area-4 grid-area-5";
+      grid-template-areas: "grid-area-1 grid-area-1 grid-area-2 grid-area-5"
+ "grid-area-3 grid-area-4 grid-area-4 grid-area-5";
 }
 
 .wrapper .item-1 {
@@ -104,21 +90,37 @@ p {
   border-radius: 50%;
 }
 
-.wrapper .card-head .person-detail .person-name {
+.wrapper .card-head .person-detail {
   margin-left: 1rem;
 }
 
 .wrapper .card-head .person-detail .person-role p {
   opacity: 0.5;
-}
-
-.wrapper .quote-2 p {
-  opacity: 0.7;
-  font-weight: 500px;
+  font-size: 13px;
+  line-height: 1.8;
 }
 
 .wrapper .bg-light {
   background: white;
+}
+
+.wrapper .bg-light .card-body .quote-1 {
+  margin: 1rem 0;
+}
+
+.wrapper .bg-light .card-body .quote-1 .p {
+  color: #48556a;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.wrapper .bg-light .card-body .quote-2 .p {
+  color: #48556a;
+  opacity: 0.7;
+  font-weight: 500px;
+  font-size: 13px;
+  line-height: 1.8;
 }
 
 .wrapper .bg-dark {
@@ -126,9 +128,47 @@ p {
   color: white;
 }
 
+.wrapper .bg-dark .card-body .quote-1 {
+  margin: 1rem 0;
+}
+
+.wrapper .bg-dark .card-body .quote-1 .p {
+  color: white;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.wrapper .bg-dark .card-body .quote-2 .p {
+  color: white;
+  opacity: 0.7;
+  font-weight: 500px;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
 .wrapper .bg-gray {
   background: #48556a;
   color: white;
+}
+
+.wrapper .bg-gray .card-body .quote-1 {
+  margin: 1rem 0;
+}
+
+.wrapper .bg-gray .card-body .quote-1 .p {
+  color: white;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.wrapper .bg-gray .card-body .quote-2 .p {
+  color: white;
+  opacity: 0.7;
+  font-weight: 500px;
+  font-size: 13px;
+  line-height: 1.8;
 }
 
 .wrapper .bg-purple {
@@ -136,5 +176,71 @@ p {
   background-position: calc(100% - 1rem) 1rem;
   background-repeat: no-repeat;
   color: white;
+}
+
+.wrapper .bg-purple .card-body .quote-1 {
+  margin: 1rem 0;
+}
+
+.wrapper .bg-purple .card-body .quote-1 .p {
+  color: white;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.wrapper .bg-purple .card-body .quote-2 .p {
+  color: white;
+  opacity: 0.7;
+  font-weight: 500px;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+footer {
+  background: white;
+  position: fixed;
+  padding: .5rem;
+  width: 100%;
+  bottom: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    margin: 2rem 0 4rem;
+    height: auto;
+  }
+  .main-grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "grid-area-1 grid-area-1"
+                             "grid-area-2 grid-area-5"
+                             "grid-area-3 grid-area-5" 
+                             "grid-area-4 grid-area-4";
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "grid-area-1" 
+                             "grid-area-2" 
+                             "grid-area-3" 
+                             "grid-area-4" 
+                             "grid-area-5";
+  }
+  .testimonial-grid-card {
+    margin: 1 0 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

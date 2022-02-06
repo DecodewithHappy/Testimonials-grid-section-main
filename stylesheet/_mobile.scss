@@ -1,0 +1,21 @@
+//mobile
+@media (max-width: 1200px) {
+  .wrapper {
+    margin: 2rem 0 4rem;
+    height: auto;
+    .main-grid {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "grid-area-1 grid-area-1" "grid-area-2 grid-area-5" "grid-area-3 grid-area-5" "grid-area-4 grid-area-4";
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "grid-area-1" "grid-area-2" "grid-area-3" "grid-area-4" "grid-area-5";
+  }
+  .testimonial-grid-card {
+    margin: 1 0 1rem;
+  }
+}

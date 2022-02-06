@@ -1,5 +1,6 @@
 @import "variable";
 @import "mixin";
+@import "mobile";
 
 * {
   box-sizing: border-box;
@@ -13,23 +14,6 @@ body {
   color: $Color;
 }
 
-//styling paragraph
-p {
-  font-size: 13px;
-  line-height: 1.8;
-}
-
-//styling paragraph inside quote-1
-.quote-1 {
-  margin: 1rem 0;
-
-  p {
-    font-weight: 600px;
-    font-size: 1.25rem;
-    line-height: 1.2;
-  }
-}
-
 //styling the wrapper class
 .wrapper {
   @include flexprob;
@@ -37,7 +21,11 @@ p {
 
   //styling the main grid element
   .main-grid {
-    @include gridcontrol;
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-areas:
+      "grid-area-1 grid-area-1 grid-area-2 grid-area-5"
+      "grid-area-3 grid-area-4 grid-area-4 grid-area-5";
   }
 
   .item-1 {
@@ -68,51 +56,66 @@ p {
   }
 
   .card-head {
-    @include flexprob1;
+    @include flexprob;
 
-  .profile-img {
-    img {
-      border: 1px solid $bgLightBackgroundColor;
-      border-radius: 50%;
-    }
-  }
-
-  .person-detail {
-    .person-name {
-      margin-left: 1rem;
-    }
-
-    .person-role {
-      p {
-        opacity: 0.5;
+    .profile-img {
+      img {
+        border: 1px solid $bgLightBackgroundColor;
+        border-radius: 50%;
       }
     }
-  }
-}
 
-  .quote-2 {
-    p {
-      opacity: 0.7;
-      font-weight: 500px;
-      //font-size: 1rem;
+    .person-detail {
+      margin-left: 1rem;
+
+      .person-role {
+        p {
+          opacity: 0.5;
+          font-size: 13px;
+          line-height: 1.8;
+        }
+      }
     }
   }
 
   .bg-light {
+    @include commonstyle($bgGrayBackground);
     background: $bgLightBackgroundColor;
   }
 
   .bg-dark {
+    @include commonstyle($bgLightBackgroundColor);
     background: $bgDarkBackground;
     color: $bgLightBackgroundColor;
   }
 
   .bg-gray {
+    @include commonstyle($bgLightBackgroundColor);
     background: $bgGrayBackground;
     color: $bgLightBackgroundColor;
   }
 
   .bg-purple {
+    @include commonstyle($bgLightBackgroundColor);
     @include purple-card;
   }
+}
+
+//footer
+
+footer {
+  background: hsl(0, 0%, 100%);
+  position: fixed;
+  padding: 0.5rem;
+  width: 100%;
+  bottom: 0;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
