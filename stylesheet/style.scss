@@ -78,8 +78,34 @@ body {
     }
   }
 
+  .card-body {
+    .quote-1 {
+      margin: 1rem 0;
+      p {
+        font-weight: 600px;
+        font-size: 18px;
+        line-height: 1.2;
+        //font-weight:bold;
+      }
+    }
+    .quote-2 {
+      p {
+        opacity: 0.7;
+        font-weight: 500px;
+        font-size: 13px;
+        line-height: 1.8;
+      }
+    }
+  }
+
   .bg-light {
-    @include commonstyle($bgGrayBackground);
+    .card-body{
+      .quote-1{
+        p{
+
+        }
+      }
+    }
     background: $bgLightBackgroundColor;
   }
 

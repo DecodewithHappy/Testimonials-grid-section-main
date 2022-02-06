@@ -229,7 +229,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .main-grid {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;

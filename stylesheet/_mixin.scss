@@ -13,27 +13,4 @@
   color: $bgLightBackgroundColor;
 }
 
-@mixin commonstyle($par) {
-  .card-body {
-    .quote-1 {
-      margin: 1rem 0;
-      .p {
-        color: $par;
-        font-weight: 600px;
-        font-size: 18px;
-        line-height: 1.2;
-        //font-weight:bold;
-      }
-    }
-    .quote-2 {
-      .p {
-        color: $par;
-        opacity: 0.7;
-        font-weight: 500px;
-        font-size: 13px;
-        line-height: 1.8;
-      }
-    }
-  }
-}
 
