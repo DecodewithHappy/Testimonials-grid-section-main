@@ -17,6 +17,7 @@ body {
 //styling the wrapper class
 .wrapper {
   @include flexprob;
+  justify-content:center;
   height: 880px;
 
   //styling the main grid element
