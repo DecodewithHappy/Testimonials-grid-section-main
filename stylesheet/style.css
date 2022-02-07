@@ -1,25 +1,3 @@
-@media only screen and (max-width: 1200px) {
-  .wrapper {
-    margin: 2rem 0 4rem;
-    height: auto;
-  }
-  .wrapper .main-grid {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "grid-area-1 grid-area-1" "grid-area-2 grid-area-5" "grid-area-3 grid-area-5" "grid-area-4 grid-area-4";
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .wrapper .main-grid {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas: "grid-area-1" "grid-area-2" "grid-area-3" "grid-area-4" "grid-area-5";
-  }
-  .wrapper .main-grid .testimonial-grid-card {
-    margin: 1 0 1rem;
-  }
-}
 
 * {
   -webkit-box-sizing: border-box;
@@ -52,43 +30,11 @@ body {
   display: grid;
   -ms-grid-columns: 300px 300px 300px 300px;
       grid-template-columns: 300px 300px 300px 300px;
-      grid-template-areas: "grid-area-1 grid-area-1 grid-area-2 grid-area-5" "grid-area-3 grid-area-4 grid-area-4 grid-area-5";
+      grid-template-areas: "grid-area-1 grid-area-1 grid-area-2 grid-area-5"
+ "grid-area-3 grid-area-4 grid-area-4 grid-area-5";
 }
 
-.wrapper .item-1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: grid-area-1;
-}
-
-.wrapper .item-2 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: grid-area-2;
-}
-
-.wrapper .item-3 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: grid-area-3;
-}
-
-.wrapper .item-4 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-area: grid-area-4;
-}
-
-.wrapper .item-5 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 4;
-  grid-area: grid-area-5;
-}
-
-.wrapper .testimonial-grid-card {
+.wrapper .main-grid .testimonial-grid-card {
   -webkit-box-shadow: 0.5rem 0.75rem 0.75rem #b3b3b3;
           box-shadow: 0.5rem 0.75rem 0.75rem #b3b3b3;
   border-radius: 1rem;
@@ -96,7 +42,40 @@ body {
   margin: 1rem;
 }
 
-.wrapper .card-head {
+.wrapper .main-grid .item-1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: grid-area-1;
+}
+
+.wrapper .main-grid .item-2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: grid-area-2;
+}
+
+.wrapper .main-grid .item-3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: grid-area-3;
+}
+
+.wrapper .main-grid .item-4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: grid-area-4;
+}
+
+.wrapper .main-grid .item-5 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: grid-area-5;
+}
+
+.wrapper .main-grid .card-head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,49 +84,56 @@ body {
           align-items: center;
 }
 
-.wrapper .card-head .profile-img img {
+.wrapper .main-grid .card-head .profile-img img {
   border: 1px solid white;
   border-radius: 50%;
 }
 
-.wrapper .card-head .person-detail {
+.wrapper .main-grid .card-head .person-detail {
   margin-left: 1rem;
 }
 
-.wrapper .card-head .person-detail .person-role p {
-  opacity: 0.5;
+.wrapper .main-grid .card-head .person-detail .person-role .role-para {
+  opacity: 1.5;
   font-size: 13px;
   line-height: 1.8;
 }
 
-.wrapper .role-para {
-  font-weight: 600px;
-  font-size: 18px;
-  line-height: 1.2;
+.wrapper .main-grid .card-body .quote1 {
+  padding-top: 1rem;
 }
 
-.wrapper .quote2-para {
+.wrapper .main-grid .card-body .quote1 .quote1-para {
+  font-weight: 600px;
+}
+
+.wrapper .main-grid .card-body .quote2 {
+  padding-top: 1rem;
+}
+
+.wrapper .main-grid .card-body .quote2 .quote2-para {
   opacity: 0.7;
   font-weight: 500px;
   font-size: 13px;
   line-height: 1.8;
 }
 
-.wrapper .bg-light {
+.wrapper .main-grid .bg-light {
+  color: #19212e;
   background: white;
 }
 
-.wrapper .bg-dark {
+.wrapper .main-grid .bg-dark {
   background: #19212e;
   color: white;
 }
 
-.wrapper .bg-gray {
+.wrapper .main-grid .bg-gray {
   background: #48556a;
   color: white;
 }
 
-.wrapper .bg-purple {
+.wrapper .main-grid .bg-purple {
   background: url("https://raw.githubusercontent.com/DecodewithHappy/Testimonials-grid-section-main/873e415e5165b0a5f1b3e9b52b144b93a3f83546/images/bg-pattern-quotation.svg") repeat #7541c8;
   background-position: calc(100% - 1rem) 1rem;
   background-repeat: no-repeat;
@@ -169,5 +155,35 @@ footer {
 
 .attribution a {
   color: #3e52a3;
+}
+
+@media only screen and (max-width: 1200px) {
+  .wrapper {
+    margin: 2rem 0 4rem;
+    height: auto;
+  }
+  .wrapper .main-grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "grid-area-1 grid-area-1"
+ "grid-area-2 grid-area-5"
+ "grid-area-3 grid-area-5"
+ "grid-area-4 grid-area-4";
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper .main-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: "grid-area-1"
+ "grid-area-2"
+ "grid-area-3"
+ "grid-area-4"
+ "grid-area-5";
+  }
+  .wrapper .main-grid .testimonial-grid-card {
+    margin: 1 0 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -17,7 +17,7 @@ body {
 //styling the wrapper class
 .wrapper {
   @include flexprob;
-  justify-content:center;
+  justify-content: center;
   height: 880px;
 
   //styling the main grid element
@@ -27,87 +27,93 @@ body {
     grid-template-areas:
       "grid-area-1 grid-area-1 grid-area-2 grid-area-5"
       "grid-area-3 grid-area-4 grid-area-4 grid-area-5";
-  }
 
-  .item-1 {
-    grid-area: grid-area-1;
-  }
-
-  .item-2 {
-    grid-area: grid-area-2;
-  }
-
-  .item-3 {
-    grid-area: grid-area-3;
-  }
-
-  .item-4 {
-    grid-area: grid-area-4;
-  }
-
-  .item-5 {
-    grid-area: grid-area-5;
-  }
-
-  .testimonial-grid-card {
-    box-shadow: 0.5rem 0.75rem 0.75rem hsl(0, 0%, 70%);
-    border-radius: 1rem;
-    padding: 1.5rem;
-    margin: 1rem;
-  }
-
-  .card-head {
-    @include flexprob;
-
-    .profile-img {
-      img {
-        border: 1px solid $bgLightBackgroundColor;
-        border-radius: 50%;
-      }
+    .testimonial-grid-card {
+      box-shadow: 0.5rem 0.75rem 0.75rem hsl(0, 0%, 70%);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      margin: 1rem;
     }
 
-    .person-detail {
-      margin-left: 1rem;
+    .item-1 {
+      grid-area: grid-area-1;
+    }
 
-      .person-role {
-        p {
-          opacity: 0.5;
+    .item-2 {
+      grid-area: grid-area-2;
+    }
+
+    .item-3 {
+      grid-area: grid-area-3;
+    }
+
+    .item-4 {
+      grid-area: grid-area-4;
+    }
+
+    .item-5 {
+      grid-area: grid-area-5;
+    }
+
+    .card-head {
+      @include flexprob;
+
+      .profile-img {
+        img {
+          border: 1px solid $bgLightBackgroundColor;
+          border-radius: 50%;
+        }
+      }
+
+      .person-detail {
+        margin-left: 1rem;
+
+        .person-role {
+          .role-para {
+            opacity: 1.5;
+            font-size: 13px;
+            line-height: 1.8;
+          }
+        }
+      }
+    }
+    
+    .card-body {
+      .quote1 {
+        padding-top: 1rem;
+        .quote1-para {
+          font-weight: 600px;
+        }
+      }
+      .quote2 {
+        padding-top: 1rem;
+        .quote2-para {
+          opacity: 0.7;
+          font-weight: 500px;
           font-size: 13px;
           line-height: 1.8;
         }
       }
     }
-  }
 
-  .role-para{
-    font-weight: 600px;
-        font-size: 18px;
-        line-height: 1.2;
-  }
-  .quote2-para {
-        opacity: 0.7;
-        font-weight: 500px;
-        font-size: 13px;
-        line-height: 1.8;
+    .bg-light {
+      color : $bgDarkBackground;
+      background: $bgLightBackgroundColor;
+    }
 
-  }
+    .bg-dark {
+      background: $bgDarkBackground;
+      color: $bgLightBackgroundColor;
+    }
 
-  .bg-light {
-    background: $bgLightBackgroundColor;
-  }
+    .bg-gray {
+      background: $bgGrayBackground;
+      color: $bgLightBackgroundColor;
+    }
 
-  .bg-dark {
-    background: $bgDarkBackground;
-    color: $bgLightBackgroundColor;
-  }
-
-  .bg-gray {
-    background: $bgGrayBackground;
-    color: $bgLightBackgroundColor;
-  }
-
-  .bg-purple {
-    @include purple-card;
+    .bg-purple {
+      @include purple-card;
+    }
   }
 }
 
