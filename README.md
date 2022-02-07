@@ -37,7 +37,7 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 ### Links
 
 - Question URL: [Click Here](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7/hub/testimonials-grid-section-208z_ztkW)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Click Here](https://decodewithhappy.github.io/Testimonials-grid-section-main/)
 
 ## My process
 
