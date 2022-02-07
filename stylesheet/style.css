@@ -93,43 +93,56 @@ body {
   margin-left: 1rem;
 }
 
-.wrapper .main-grid .card-head .person-detail .person-role .role-para {
+.wrapper .main-grid .quote-1 {
+  padding-top: 1rem;
+}
+
+.wrapper .main-grid .quote-2 {
+  padding-top: 1rem;
+}
+
+.wrapper .main-grid p.name-para {
+  font-weight: bold;
+}
+
+.wrapper .main-grid p.person-role {
   opacity: 1.5;
   font-size: 13px;
   line-height: 1.8;
 }
 
-.wrapper .main-grid .card-body .quote1 {
-  padding-top: 1rem;
+.wrapper .main-grid p.quote1-para {
+  font-weight: 900;
+  font-size: 22px;
 }
 
-.wrapper .main-grid .card-body .quote1 .quote1-para {
-  font-weight: 600px;
-}
-
-.wrapper .main-grid .card-body .quote2 {
-  padding-top: 1rem;
-}
-
-.wrapper .main-grid .card-body .quote2 .quote2-para {
-  opacity: 0.7;
-  font-weight: 500px;
-  font-size: 13px;
-  line-height: 1.8;
+.wrapper .main-grid p.quote2-para {
+  opacity: 1.5;
+  font-weight: 400;
+  font-size: 1rem;
 }
 
 .wrapper .main-grid .bg-light {
-  color: #19212e;
   background: white;
+}
+
+.wrapper .main-grid .bg-light p {
+  color: #48556a;
 }
 
 .wrapper .main-grid .bg-dark {
   background: #19212e;
+}
+
+.wrapper .main-grid .bg-dark p {
   color: white;
 }
 
 .wrapper .main-grid .bg-gray {
   background: #48556a;
+}
+
+.wrapper .main-grid .bg-gray p {
   color: white;
 }
 
@@ -137,6 +150,9 @@ body {
   background: url("https://raw.githubusercontent.com/DecodewithHappy/Testimonials-grid-section-main/873e415e5165b0a5f1b3e9b52b144b93a3f83546/images/bg-pattern-quotation.svg") repeat #7541c8;
   background-position: calc(100% - 1rem) 1rem;
   background-repeat: no-repeat;
+}
+
+.wrapper .main-grid .bg-purple p {
   color: white;
 }
 
@@ -149,7 +165,8 @@ footer {
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 1.3rem;
+  font-weight: bold;
   text-align: center;
 }
 

@@ -10,7 +10,9 @@
     repeat $bgPurpleColor;
   background-position: calc(100% - 1rem) 1rem;
   background-repeat: no-repeat;
-  color: $bgLightBackgroundColor;
+  p{
+    color: $bgLightBackgroundColor;
+  }
 }
 
 

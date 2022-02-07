@@ -67,48 +67,57 @@ body {
 
       .person-detail {
         margin-left: 1rem;
-
-        .person-role {
-          .role-para {
-            opacity: 1.5;
-            font-size: 13px;
-            line-height: 1.8;
-          }
-        }
       }
     }
-    
-    .card-body {
-      .quote1 {
-        padding-top: 1rem;
-        .quote1-para {
-          font-weight: 600px;
-        }
-      }
-      .quote2 {
-        padding-top: 1rem;
-        .quote2-para {
-          opacity: 0.7;
-          font-weight: 500px;
-          font-size: 13px;
-          line-height: 1.8;
-        }
-      }
+
+    .quote-1 {
+      padding-top: 1rem;
+    }
+
+    .quote-2 {
+      padding-top: 1rem;
+    }
+
+    p.name-para {
+      font-weight: bold;
+    }
+
+    p.person-role {
+      opacity: 1.5;
+      font-size: 13px;
+      line-height: 1.8;
+    }
+
+    p.quote1-para {
+      font-weight: 900;
+      font-size: 22px;
+    }
+
+    p.quote2-para {
+      opacity: 1.5;
+      font-weight: 400;
+      font-size: 1rem;
     }
 
     .bg-light {
-      color : $bgDarkBackground;
       background: $bgLightBackgroundColor;
+      p {
+        color: $bgGrayBackground;
+      }
     }
 
     .bg-dark {
       background: $bgDarkBackground;
-      color: $bgLightBackgroundColor;
+      p {
+        color: $bgLightBackgroundColor;
+      }
     }
 
     .bg-gray {
       background: $bgGrayBackground;
-      color: $bgLightBackgroundColor;
+      p {
+        color: $bgLightBackgroundColor;
+      }
     }
 
     .bg-purple {
@@ -128,7 +137,8 @@ footer {
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 1.3rem;
+  font-weight: bold;
   text-align: center;
 }
 
