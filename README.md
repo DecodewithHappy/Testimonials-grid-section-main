@@ -30,9 +30,9 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 
 ### Screenshot
 
-![](./design/Screenshot-desktop.png)
+![](./images/Screenshot-desktop.png)
 
-![](./design/Screenshot-Mobile.png)
+![](./images/Screenshot-Mobile.png)
 
 ### Links
 
